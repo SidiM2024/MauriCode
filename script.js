@@ -66,3 +66,37 @@ document.querySelectorAll('.btn').forEach(button => {
         alert('سيتم إعادة توجيهك إلى الموقع المناسب');
     });
 });
+
+// دالة إرسال البيانات إلى واتساب عند إرسال النموذج
+function submitExpertForm(event) {
+    event.preventDefault(); // منع إرسال النموذج بشكل تقليدي
+
+    // جمع البيانات من النموذج
+    const name = document.getElementById("name").value;
+    const expertise = document.getElementById("expertise").value;
+    const bio = document.getElementById("bio").value;
+    const contact = document.getElementById("contact").value;
+
+    // تكوين رسالة واتساب
+    const message = `اسم: ${name}\nمجال الخبرة: ${expertise}\nسيرة ذاتية: ${bio}\nرقم الهاتف: ${contact}`;
+
+    // فتح رابط واتساب مع الرسالة
+    window.open(`https://wa.me/30647036?text=${encodeURIComponent(message)}`, '_blank');
+}
+
+// دالة إرسال البيانات إلى واتساب عند إرسال النموذج للشركات
+function submitCompanyForm(event) {
+    event.preventDefault(); // منع إرسال النموذج بشكل تقليدي
+
+    // جمع البيانات من النموذج
+    const companyName = document.getElementById("company-name").value;
+    const industry = document.getElementById("industry").value;
+    const companyBio = document.getElementById("company-bio").value;
+    const companyContact = document.getElementById("company-contact").value;
+
+    // تكوين رسالة واتساب
+    const message = `اسم الشركة: ${companyName}\nصناعة الشركة: ${industry}\nنبذة عن الشركة: ${companyBio}\nرقم الهاتف: ${companyContact}`;
+
+    // فتح رابط واتساب مع الرسالة
+    window.open(`https://wa.me/30647036?text=${encodeURIComponent(message)}`, '_blank');
+}
