@@ -63,6 +63,60 @@
         </div>
     </section>
 
+    <section class="experts-section">
+    <div class="section-header">
+        <h2>فرص للأساتذة والخبراء في البرمجة</h2>
+        <p>إذا كنت خبيرًا في البرمجة وترغب في تقديم فرص تعليمية للطلاب، قم بتسجيل بياناتك هنا!</p>
+    </div>
+
+    <!-- نموذج التسجيل للأساتذة والخبراء -->
+    <div class="expert-form">
+        <form id="expert-form" onsubmit="submitExpertForm(event)">
+            <label for="name">اسمك</label>
+            <input type="text" id="name" name="name" required placeholder="أدخل اسمك">
+
+            <label for="expertise">مجال الخبرة</label>
+            <input type="text" id="expertise" name="expertise" required placeholder="أدخل مجال الخبرة">
+
+            <label for="bio">سيرة ذاتية</label>
+            <textarea id="bio" name="bio" required placeholder="أدخل سيرة ذاتية قصيرة"></textarea>
+
+            <label for="contact">رقم هاتفك</label>
+            <input type="text" id="contact" name="contact" required placeholder="أدخل رقم هاتفك">
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</section>
+
+    <section class="companies-section">
+    <div class="section-header">
+        <h2>الشركات الداعمة لتقنية المعلومات</h2>
+        <p>إذا كنت تمثل شركة مهتمة بتطوير مجال التقنية، قم بتسجيل بيانات شركتك هنا.</p>
+    </div>
+
+    <!-- نموذج التسجيل للشركات -->
+    <div class="company-form">
+        <form id="company-form" onsubmit="submitCompanyForm(event)">
+            <label for="company-name">اسم الشركة</label>
+            <input type="text" id="company-name" name="company-name" required placeholder="أدخل اسم شركتك">
+
+            <label for="industry">صناعة الشركة</label>
+            <input type="text" id="industry" name="industry" required placeholder="أدخل صناعة الشركة">
+
+            <label for="company-bio">نبذة عن الشركة</label>
+            <textarea id="company-bio" name="company-bio" required placeholder="أدخل نبذة عن شركتك"></textarea>
+
+            <label for="company-contact">رقم هاتف الشركة</label>
+            <input type="text" id="company-contact" name="company-contact" required placeholder="أدخل رقم هاتف الشركة">
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</section>
+
+
+
     <!-- قسم البث المباشر -->
 <section class="live-stream">
     <div class="section-header">
