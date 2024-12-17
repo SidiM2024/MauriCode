@@ -58,10 +58,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     window.open(whatsappURL, '_blank');
 });
 
-// إضافة تأثير عند الضغط على زر الانضمام
-document.querySelector('.join-btn').addEventListener('click', function () {
-    alert('ستتم إعادة توجيهك إلى البث المباشر عبر Zoom!');
-});
+
 
 // إذا أردت إضافة تفاعل مع الأزرار أو المحتوى يمكن إضافة أكواد JavaScript هنا
 document.querySelectorAll('.btn').forEach(button => {
