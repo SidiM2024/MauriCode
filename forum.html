@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملتقى</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-laptop-code"></i> المبرمجين الموريتانيين
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="events.html">الندوات والمسابقات</a></li>
+            <li><a href="forum.html">الملتقى</a></li>
+            <li><a href="tools.html">الأدوات</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>الملتقى</h1>
+        <p>انضم إلى مجتمعنا وابدأ في تبادل المعرفة مع المبرمجين الموريتانيين!</p>
+    </header>
+
+    <section class="registration">
+        <h2>التسجيل</h2>
+        <form id="registration-form">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+    
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" placeholder="اكتب رقم هاتفك" required>
+    
+            <label for="bio">السيرة الذاتية:</label>
+            <textarea id="bio" name="bio" placeholder="اكتب سيرتك الذاتية هنا" required></textarea>
+    
+            <label for="interests">الاهتمامات:</label>
+            <input type="text" id="interests" name="interests" placeholder="اكتب اهتماماتك" required>
+    
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <section class="social-space">
+        <div class="section-header">
+            <h2>مساحة التواصل الاجتماعي</h2>
+            <p>انضم إلى مجتمعنا على واتساب وابقَ على اطلاع بأحدث الأخبار والمناسبات.</p>
+        </div>
+    
+        <div class="social-card">
+            <div class="icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>انضم إلى كروب واتساب</h3>
+            <p>شاركنا في مناقشات حية وابقَ على اطلاع بكل جديد.</p>
+            <a href="https://chat.whatsapp.com/F2zT0PWm1ksFbwpfUWStEb" class="join-btn" target="_blank">انضم الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم البث المباشر -->
+<section class="live-stream">
+    <div class="section-header">
+        <h1>البث المباشر</h1>
+        <p>انضم إلى الندوات والمسابقات المباشرة في أي وقت.</p>
+    </div>
+
+    <div class="live-stream-container">
+        <div class="live-stream-details">
+            <i class="fas fa-video"></i>
+            <h2>الندوة القادمة: تعلم الذكاء الاصطناعي</h2>
+            <p>الوقت: 10:00 صباحًا، 20 ديسمبر 2024</p>
+            <p>مقدم الندوة: الدكتور أحمد</p>
+            <p>اضغط على الرابط أدناه للانضمام للبث المباشر عبر Zoom.</p>
+            <a href="رابط_zoom_هنا" class="join-btn" target="_blank">انضم إلى البث الآن</a>
+        </div>
+    </div>
+</section>
+
+    
+    
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة | موقع المبرمجين الموريتانيين</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
