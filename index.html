@@ -33,6 +33,137 @@
             <i class="fas fa-bars"></i>
         </div>
     </nav>
+    <!-- نافذة صغيرة مع شريط إعلان -->
+<div id="popup" class="popup">
+  <span class="close-btn" onclick="closePopup()">&#10005;</span>
+  <div class="popup-content">
+    <p><strong>تعرف على Rimcode:</strong> تحويل فكرتك إلى موقع احترافي</p>
+    <a href="https://rimcode.vercel.app/" target="_blank" class="popup-btn">اعرف المزيد</a>
+  </div>
+</div>
+
+<!-- شريط الإعلان -->
+<div id="announcement-bar" class="announcement-bar">
+  <span>🔔 عرض خاص! <a href="https://rimcode.vercel.app/" target="_blank">زور Rimcode الآن</a></span>
+  <span class="close-bar" onclick="closeBar()">&#10005;</span>
+</div>
+
+<!-- تنسيقات CSS -->
+<style>
+  /* شريط الإعلان */
+  .announcement-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000;
+  }
+
+  .announcement-bar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .announcement-bar .close-bar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+
+  /* نافذة الإعلان */
+  .popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 1001;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .popup-content p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .popup-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .popup-btn:hover {
+    background-color: #45a049;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  /* أنيمشن النافذة */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  // عرض النافذة بعد 8 ثوانٍ
+  window.onload = function () {
+    setTimeout(function () {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+    }, 8000); // 8 ثوانٍ
+  };
+
+  // دالة إغلاق النافذة
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+
+  // دالة إغلاق شريط الإعلان
+  function closeBar() {
+    var bar = document.getElementById("announcement-bar");
+    bar.style.display = "none";
+  }
+</script>
+
 
     <header class="header">
         <h1>مرحبًا بك في موقع المبرمجين الموريتانيين</h1>
